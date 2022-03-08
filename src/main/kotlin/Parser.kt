@@ -12,7 +12,7 @@ class HtmlParser {
             .toSet()
     }
 
-    private fun buildHyperlink(url: String): Hyperlink {
+     fun buildHyperlink(url: String): Hyperlink {
         val urlWithoutProtocol = url.substringAfter("://")
         return Hyperlink(
             url = url,
